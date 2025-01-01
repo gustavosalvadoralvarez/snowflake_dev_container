@@ -1,0 +1,3 @@
+.secrets/config.toml
+__pycache__
+*.egg-info

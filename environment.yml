@@ -1,0 +1,13 @@
+﻿name: snowflake_dev_py3.11
+channels:
+  - https://repo.anaconda.com/pkgs/snowflake
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - numpy 
+  - pyarrow
+  - python=3.11
+  - snowflake-connector-python
+  - snowflake-snowpark-python
+  - streamlit
