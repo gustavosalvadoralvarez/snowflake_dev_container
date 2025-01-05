@@ -1,0 +1,6 @@
+## pyproject.toml
+[tool.coverage.run]
+source = ["container_utils"]
+
+[tool.pytest.ini_options]
+addopts = "--cov-report xml:cov.xml --cov"
