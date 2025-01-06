@@ -11,3 +11,12 @@ password = "test_pass"
 database = "test_database"
 warehouse = "test_wh"
 role = "test_role"
+
+
+[connections.test_conn]
+account = "test_account"
+user = "test_user"
+password = "test_pass"
+database = "test_database"
+warehouse = "test_wh"
+role = "test_role"

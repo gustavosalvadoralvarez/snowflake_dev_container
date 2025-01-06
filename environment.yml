@@ -4,10 +4,17 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - scikit-learn
+  - statsmodels
+  - matplotlib
+  - altair-all
+  - plotly
   - pandas
   - numpy 
   - pyarrow
   - python=3.11
+  - ipykernel
+  - jupyter
   - snowflake-connector-python
   - snowflake-snowpark-python
   - streamlit

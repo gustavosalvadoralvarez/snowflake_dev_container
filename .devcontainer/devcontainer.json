@@ -1,10 +1,30 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/anaconda
 {
-	"name": "Anaconda (Python 3)",
+
+
+	"name": "Snowflake Development Container",
 	"build": { 
 		"context": "..",
-		"dockerfile": "Dockerfile"
+		"dockerfile": "Dockerfile",
+		"args": {
+			"INSTALL_UTILS": "True"
+		}
+	},
+	"mounts": [
+		"source=${localEnv:HOME}/.config/snowflake,target=/root/.config/snowflake/,type=bind,consistency=cached,ro"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.debugpy",
+				"ryanluker.vscode-coverage-gutters",
+				"ms-toolsai.jupyter",
+				"ms-azuretools.vscode-docker"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
