@@ -12,7 +12,7 @@
 		}
 	},
 	"mounts": [
-		"source=${localEnv:HOME}/.config/snowflake,target=/root/.config/snowflake/,type=bind,consistency=cached,ro"
+		"source=${localEnv:HOME}/.snowflake/,target=/root/.config/snowflake/,type=bind,consistency=cached,ro"
 	],
 	"customizations": {
 		"vscode": {
